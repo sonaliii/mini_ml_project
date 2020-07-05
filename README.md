@@ -21,4 +21,7 @@ If you have new data stored in `new_data.csv`, then run the following:
 
 ### Feature Engineering, Data Cleaning, etc.
 This project was built using a *very* small Kaggle data set that had processed/numerical features already. 
-Feature generation and data cleaning are not within the scope of this mini-project.
+Feature generation and data cleaning are not within the scope of this mini-project. 
+
+### Model Performance
+This project was set up with keras tuner as a starting point for hyperparameter tuning. However, the model has *not* been tuned to improve bias or variance significantly. Variance improvements are also restricted here by the small size of the training data set. 
