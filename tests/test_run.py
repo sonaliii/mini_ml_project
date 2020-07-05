@@ -1,6 +1,6 @@
 from sys import path
 from os.path import dirname as dir
-project_path = dir(path[0]).split('src', 1)[0]
+project_path = dir(path[0]).split('tests', 1)[0]
 path.append(project_path)
 
 from src import classifier, data_loading
