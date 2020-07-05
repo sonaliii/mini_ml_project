@@ -36,7 +36,6 @@ class NNModel:
         # Initialize variables output by the model
         self.trained_model = None
         self.best_hyperparameters = None
-        self.y_predictions = None
         self.test_loss = None
         self.test_accuracy = None
 
