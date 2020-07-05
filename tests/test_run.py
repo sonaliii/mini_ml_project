@@ -43,3 +43,10 @@ def test_new_predictions():
     predictions = model.predict(new_data)
     assert all(p >= 0 for p in predictions)
     assert all(p <= 1 for p in predictions)
+
+
+if __name__ == '__main__':
+    test_loss()
+    test_accuracy()
+    test_hyperparameters()
+    test_new_predictions()
