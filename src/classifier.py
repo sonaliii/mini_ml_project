@@ -149,15 +149,7 @@ class NNModel:
         return x_scaled_arr, y_arr
 
     @property
-    def get_accuracy(self):
-        return self.test_accuracy
-
-    @property
-    def get_loss(self):
-        return self.test_loss
-
-    @property
-    def get_best_hyperparameters(self):
+    def best_hyperparameters_dict(self):
         """
         Restructure selected hyperparameters into a dictionary for easier inspection.
         :return: dict of selected optimal hyperparameters

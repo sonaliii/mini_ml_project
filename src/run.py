@@ -18,9 +18,9 @@ def run_model_with_predictions(new_data_path=''):
 
     model = classifier.NNModel(cvd_train_data)
     model.cv_train_test()
-    print('Test loss: ', model.get_loss)
-    print('Test accuracy: ', model.get_accuracy)
-    print('Best hyperparameters selected: ', model.get_best_hyperparameters)
+    print('Test loss: ', model.test_loss)
+    print('Test accuracy: ', model.test_accuracy)
+    print('Best hyperparameters selected: ', model.best_hyperparameters_dict)
 
     if new_data_path:
         new_data = data_loading.load_data(new_data_path)

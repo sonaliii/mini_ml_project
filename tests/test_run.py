@@ -11,7 +11,7 @@ def test_loss():
     cvd_data = data_loading.load_data(cvd_data_path)
     model = classifier.NNModel(cvd_data)
     model.cv_train_test()
-    assert isinstance(model.get_loss, float)
+    assert isinstance(model.test_loss, float)
 
 
 def test_accuracy():
@@ -19,7 +19,7 @@ def test_accuracy():
     cvd_data = data_loading.load_data(cvd_data_path)
     model = classifier.NNModel(cvd_data)
     model.cv_train_test()
-    assert model.get_accuracy <= 1.0
+    assert model.test_accuracy <= 1.0
 
 
 def test_hyperparameters():
@@ -27,7 +27,7 @@ def test_hyperparameters():
     cvd_data = data_loading.load_data(cvd_data_path)
     model = classifier.NNModel(cvd_data)
     model.cv_train_test()
-    assert 'l2_layer_1' in model.get_best_hyperparameters
+    assert 'l2_layer_1' in model.best_hyperparameters_dict
 
 
 def test_new_predictions():
