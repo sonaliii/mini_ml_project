@@ -25,3 +25,8 @@ Feature generation and data cleaning are not within the scope of this mini-proje
 
 ### Model Performance
 This project was set up with keras tuner as a starting point for hyperparameter tuning. However, the model has *not* been tuned to improve bias or variance significantly. Variance improvements are also restricted here by the small size of the training data set. 
+
+### Data Source
+Data was obtained from Kaggle: https://www.kaggle.com/ronitf/heart-disease-uci/data
+
+Original source: https://archive.ics.uci.edu/ml/datasets/Heart+Disease
